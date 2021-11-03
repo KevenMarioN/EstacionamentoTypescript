@@ -6,26 +6,28 @@
 
 		}
 		function adicionar(){
-
+			const modeloVeiculo = $("body > div > div:nth-child(1) > input")?.value;
+			const placaVeiculo = $("body > div > div:nth-child(2) > input")?.value;
+			console.log(modeloVeiculo,placaVeiculo)
+			if(!modeloVeiculo || !placaVeiculo){
+				alert("Os campos nome e placa são obrigatorios!")
+				return;
+		}
 		}
 		function remover(){
 
 		}
 		function salvar(){
-			
+
 		}
 		function render(){
 
 		}
+
+		return { ler,adicionar,remover,salvar,render}
 	}
 
 	$("#cadastra")?.addEventListener("click",() => {
-		const modeloVeiculo = $("#modelo")?.value;
-		const placaVeiculo = $("#placa")?.value;
-		console.log(modeloVeiculo,placaVeiculo)
-		if(!modeloVeiculo || !placaVeiculo){
-			alert("Os campos nome e placa são obrigatorios!")
-			return;
-		}
+		patio().adicionar();
 	});
 })();
