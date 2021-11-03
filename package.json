@@ -1,0 +1,8 @@
+{
+  "name": "EstacionamentoTypescript",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/KevenMarioN/EstacionamentoTypescript.git",
+  "author": "KevenMarioN <kevenmario.n.r@gmail.com>",
+  "license": "MIT"
+}
