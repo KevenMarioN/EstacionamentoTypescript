@@ -10,7 +10,7 @@ interface Veiculo {
 	function calcularTempo(minutos : number){
 		const minutosTotais = Math.floor( minutos / 60000);
 		const secundosTotais = Math.floor((minutos % 60000) / 1000)
-		return `${minutosTotais}m e ${secundosTotais}s : R$ ${(minutosTotais + secundosTotais) * 0.25}`
+		return `${minutosTotais}m e ${secundosTotais}s : R$ ${(minutosTotais + secundosTotais) * 0.02}`
 	}
 
 	function patio() {
@@ -77,7 +77,7 @@ interface Veiculo {
 			alert("Os campos nome e placa são obrigatorios!")
 			return;
 		} else {
-			patio().adicionar({ modelo: modeloVeiculo, placa: placaVeiculo,cpf : cpfCliente,entrada : new Date().toISOString()},true)
+			patio().adicionar({ modelo: modeloVeiculo, placa: placaVeiculo.toUpperCase(),cpf : cpfCliente,entrada : new Date().toISOString()},true)
 			limpar();
 		}
 	});
