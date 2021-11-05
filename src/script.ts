@@ -73,8 +73,8 @@ interface Veiculo {
 		const modeloVeiculo = $("body > div > div:nth-child(1) > input")?.value;
 		const placaVeiculo = $("body > div > div:nth-child(2) > input")?.value;
 		const cpfCliente = $("body > div > div:nth-child(3) > input")?.value;
-		if (!modeloVeiculo || !placaVeiculo) {
-			alert("Os campos nome e placa são obrigatorios!")
+		if (!modeloVeiculo || !placaVeiculo || !cpfCliente) {
+			alert("Os campos Cpf, modelo,e placa são obrigatorios!")
 			return;
 		} else {
 			patio().adicionar({ modelo: modeloVeiculo, placa: placaVeiculo.toUpperCase(),cpf : cpfCliente,entrada : new Date().toISOString()},true)
