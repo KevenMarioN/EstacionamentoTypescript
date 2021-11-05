@@ -13,15 +13,19 @@
 
 <body>
 	<lottie-player src="https://assets7.lottiefiles.com/packages/lf20_wIUvN8.json"  background="transparent"  speed="0.8"  style="width: 100px; height: 100px;align-self: center;"  loop  autoplay></lottie-player>
-	<h3 style="align-self: center;">Estaciona Aé</h3>
+	<h3 style="align-self: center; text-decoration: overline;">Estaciona Aé</h3>
 	<div class="group-buttons">
 		<div class="input-group mb-3">
-			<input type="text" class="form-control" aria-label="Exemplo do tamanho do input"
+			<input type="text" class="form-control"
 				aria-describedby="inputGroup-sizing-default" placeholder="Modelo">
 		</div>
 		<div class="input-group mb-3">
-			<input type="text"  class="form-control" aria-label="Exemplo do tamanho do input"
+			<input type="text"  class="form-control"
 				aria-describedby="inputGroup-sizing-default"  style="text-transform:uppercase" placeholder="Placa" >
+		</div>
+		<div class="input-group mb-3">
+			<input type="number"   class="form-control"
+				aria-describedby="inputGroup-sizing-default" placeholder="CPF Cliente" >
 		</div>
 
 	</div>
@@ -31,7 +35,7 @@
 	<table class="table table-dark table-custom">
 		<thead class="thead-light">
 			<tr>
-
+				<th scope="col">CPF</th>
 				<th scope="col">Modelo</th>
 				<th scope="col">Placa</th>
 				<th scope="col">Entrada</th>
